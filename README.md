@@ -47,5 +47,5 @@ The *converted* sparks are pieces of parallel code that were indeed executed in 
 Literature
 -----------
 [Seq No More: Better Strategies for Parallel Haskell](http://community.haskell.org/ simonmar/papers/strategies.pdf)  
-[Parallel and Concurrent Programming in Haskell v1.2](http://community.haskell.org/ simonmar/par-tutorial.pdf), Simon Marlow
+[Parallel and Concurrent Programming in Haskell v1.2](http://community.haskell.org/ simonmar/par-tutorial.pdf), Simon Marlow  
 [Control.Parallel.Strategies](https://hackage.haskell.org/package/parallel-3.2.0.4/docs/Control-Parallel-Strategies.html)  
