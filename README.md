@@ -2,7 +2,7 @@ Stratified sampling with Parallel Strategies
 ==============
 Parallelism in Haskell is achievable using *Strategies*, or abstract containers of computations that carry a sort of meta-information about how they can be broken down for parallel execution.
 
-This example performs Monte-Carlo stratified sampling of an image (map of Scotland) to determine what percentage of it is area. Samples are generated randomly and split into chunks, to be processed in parallel. For this a custom Strategy was created, *parMapChunk*, that splits a list into a specified number of chunks and maps a function over them.
+This example performs Monte-Carlo stratified sampling of an image (map of Scotland) to determine what percentage of it is land area. Samples are generated randomly and split into chunks to be processed in parallel. For this a custom Strategy was created, *parMapChunk*, that splits a list into a specified number of chunks and maps a function over them.
 ```haskell
 --Chunked application of a function on a list, like map
 --Takes in Int - how many chunks to split in
@@ -47,5 +47,5 @@ The *converted* sparks are pieces of parallel code that were indeed executed in 
 Literature
 -----------
 [Seq No More: Better Strategies for Parallel Haskell](http://community.haskell.org/ simonmar/papers/strategies.pdf)  
-Simon Marlow, [Parallel and Concurrent Programming in Haskell v1.2](http://community.haskell.org/ simonmar/par-tutorial.pdf)  
+[Parallel and Concurrent Programming in Haskell v1.2](http://community.haskell.org/ simonmar/par-tutorial.pdf), Simon Marlow
 [Control.Parallel.Strategies](https://hackage.haskell.org/package/parallel-3.2.0.4/docs/Control-Parallel-Strategies.html)  
